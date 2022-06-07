@@ -19,6 +19,7 @@ const Login = () => {
         value={oneTimePassword}
         placeholder="1234"
         keyboardType="numeric"
+        secureTextEntry={true}
       />
     </SafeAreaView>
   );
