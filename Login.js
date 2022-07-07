@@ -11,7 +11,7 @@ const sendText = async (phoneNumber) => {
     }
   });
   const loginResponseText = await loginResponse.text();//Converts the promise to a string by using await
-  console.log("phoneNumber", phoneNumber);
+  console.log("phoneNumber:", phoneNumber);
   console.log('Login Response', loginResponseText);
 };
 
@@ -38,6 +38,7 @@ if(responseCode==200){
   console.log(token)
   const emailResponse = await fetch('https://dev.stedi.me/validate/'+token);
   const textEmail = await emailResponse.text();
+  console.log(textEmail)
   setUserEmail(textEmail)
 }}
 

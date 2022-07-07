@@ -18,6 +18,7 @@ export default function SettingsScreen(props) {
   return(
     <View style={styles.container}>
       <Text style={styles.message}>This is the settings page</Text>
+      <Text style={styles.message}>Now you will pay!</Text>
     </View>
   )
 
